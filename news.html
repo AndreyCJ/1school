@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>1 шокла</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar-buttons">
+          <ul class="topbar-buttons-box">
+            <li class="single-button">
+              <a href="#">Интернет приемная</a>
+            </li>
+            <li class="single-button">
+              <a href="#"><i class="fas fa-eye"></i>Версия для слабовидящих</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-media">
+          <a href="https://www.youtube.com/channel/UCHVUUkl0Y9-penyUwLptAug/videos" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://vk.com/gorono_meg" target="_blank"><i class="fab fa-vk"></i></a>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="main-header">
+
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-name">МБОУ СОШ №1</span><br>
+            <span class="logo-city">г. Мегион</span>
+          </a>
+        </div>
+
+        <div class="info">
+          <div class="info-widget">
+            <i class="fas fa-phone"></i>
+            <h4>Приемная директора<span>(34643) 3-13-96</span></h4>
+          </div>
+          <div class="info-widget">
+            <i class="fas fa-envelope"></i>
+            <h4>E-mail<span>school1megion@mail.ru</span></h4>
+          </div>
+          <div class="info-widget">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Адрес<span>628685, г.Мегион, ул. Свободы 6</span></h4>
+          </div>
+        </div>
+
+      </div>
+      <div class="mobile-header">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-name">МБОУ СОШ №1</span><br>
+            <span class="logo-city">г. Мегион</span>
+          </a>
+        </div>
+
+        <div class="menu-buttons">
+          <ul>
+            <li id="openSide">
+              <a href="#" onclick="openSideMenu()"><i class="fas fa-bars"></i></a>
+            </li>
+
+            <li>
+              <a href="#"><i class="fas fa-search"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mobile-menu">
+        <nav id="sideNav">
+          <ul id="mobile-nav-collection" class="mobile-navbar-nav">
+            <li>
+              <a href="#" onclick="closeSideMenu()" class="close-btn"><i class="fas fa-times"></i><span>закрыть</span></a>
+            </li>
+            <li>
+              <a href="index.html">главная</a>
+            </li>
+            <li>
+              <a href="#">о школе<i class="fas fa-angle-down"></i></a>
+              <ul class="mobile-dropdown">
+                <li><a href="#">визитаня карточка</a></li>
+                <li><a href="#">коллектив<i class="fas fa-angle-down"></i></a>
+                  <ul class="mobile-sub-dropdown">
+                    <li><a href="#">администрация школы</a></li>
+                    <li><a href="#">педагоги начальной школы</a></li>
+                    <li><a href="#">администрация и слшубы</a></li>
+                  </ul>
+                <li><a href="#">гордость школы</a></li>
+                <li><a href="#">фотогалерея за 2018 - 2019</a></li>
+                <li><a href="#">архив мероприятий</a></li>
+                <li><a href="#">летопись</a></li>
+                <li><a href="#">сведения об образовательном учреждении</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">образование<i class="fas fa-angle-down"></i></a>
+              <ul class="mobile-dropdown">
+                <li><a href="#">образвательная программа</a></li>
+                <li><a href="#">региональная инновационня площадка</a></li>
+                <li><a href="#">воспитательная работа</a></li>
+                <li><a href="#">система оценки качества образвания</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">олимпиада<i class="fas fa-angle-down"></i></a>
+              <ul class="mobile-dropdown">
+                <li><a href="#">основопологающие документы</a></li>
+                <li><a href="#">всеросийская олимпиада</a></li>
+                <li><a href="#">интернет олимпиады</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">условия</a>
+            </li>
+            <li>
+              <a href="#">информационная безопасность</a>
+            </li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div>
+
+    <div class="main-menu">
+      <div class="container">
+        <nav>
+          <ul id="nav-collection" class="navbar-nav">
+            <li>
+              <a href="index.html">главная</a>
+            </li>
+            <li>
+              <a href="#">о школе<i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="#">визитаня карточка</a></li>
+                <li><a href="#">коллектив<i class="fas fa-angle-down"></i></a>
+                  <ul class="sub-dropdown">
+                    <li><a href="#">администрация школы</a></li>
+                    <li><a href="#">педагоги начальной школы</a></li>
+                    <li><a href="#">администрация и слшубы</a></li>
+                  </ul>
+                <li><a href="#">гордость школы</a></li>
+                <li><a href="#">фотогалерея за 2018 - 2019</a></li>
+                <li><a href="#">архив мероприятий</a></li>
+                <li><a href="#">летопись</a></li>
+                <li><a href="#">сведения об образовательном учреждении</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">образование<i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="#">образвательная программа</a></li>
+                <li><a href="#">региональная инновационня площадка</a></li>
+                <li><a href="#">воспитательная работа</a></li>
+                <li><a href="#">система оценки качества образвания</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">олимпиада<i class="fas fa-angle-down"></i></a>
+              <ul class="dropdown">
+                <li><a href="#">основопологающие документы</a></li>
+                <li><a href="#">всеросийская олимпиада</a></li>
+                <li><a href="#">интернет олимпиады</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">условия</a>
+            </li>
+            <li>
+              <a href="#">информационная безопасность</a>
+            </li>
+          </ul>
+
+          <div class="search-box">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="blog-title">
+    <div class="blog-title-wrapper ">
+      <div class="blog-title-overlay"></div>
+      <div class="container">
+        <div class="blog-title-content">
+          <div class="single-blog-title">
+            <div class="article-title">
+              <h1>Инфорация об активированных днях</h1>
+            </div>
+            <div class="blog-info-title">
+              <div class="blog-info-title-category">
+                <span>Новости</span>
+              </div>
+              <div class="blog-info-title-date">
+                <span>19.02.2018</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs-box">
+        <li class="single-breadcrumb"><a href="#">Главная</a></li>
+        >
+        <li class="single-breadcrumb"><a href="#">Новости</a></li>
+        >
+        <li class="single-breadcrumb"><span>Инфорация об активированных днях</span></li>
+    </div>
+  </div>
+  </div>
+
+  <section class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="sidebar">
+          <div class="single-widget">
+            <div class="search-widget">
+              <input type="text" placeholder="Найти...">
+              <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+          <div class="single-widget">
+            <div class="announcement-widget">
+              <h3 class="header-widget">Объявления</h3>
+              <ul class="announcement-block">
+                <li>
+                  День знаний - 1.09.2018
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="feed">
+          <article>
+            <div class="post-thumbnale"><img src="https://source.unsplash.com/1920x1080/?forest" alt=""></div>
+            <div class="post-content">
+              <h5>Внеурочная деятельность</h5>
+              <p>Под внеурочной деятельностью в рамках реализации ФГОС ОО следует понимать образовательную
+                деятельность, осуществляемую в формах, отличных от классно-урочной, и направленную на достижение
+                планируемых результатов освоения основной образовательной программы общего образования.</p>
+              <p>Кроме того, внеурочная деятельность в школе позволяет решить ещё целый ряд очень важных задач:</p>
+              <ul>
+                <li>обеспечить благоприятную адаптацию и социализацию школьников; </li>
+                <li>оптимизировать учебную нагрузку обучающихся; </li>
+                <li>улучшить условия для развития ребенка; </li>
+                <li>учесть возрастные и индивидуальные особенности обучающихся. </li>
+              </ul>
+              <p>Внеурочная деятельность обучающихся 1-7 классов в рамках реализации ФГОС ведется по отдельному плану и
+                включает в себя 5 направлений: спортивно-оздоровительное, художественно-эстетическое, проектная
+                деятельность, духовно-нравственное, интеллектуальное. Обучающиеся 1-7 классов в течение недели посещают
+                10 часов кружковой работы.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="bottom-footer">
+        <div class="items">
+          <div class="footer-header"><a href="#">Школа</a></div>
+          <div class="footer-item"><a href="#">новости</a></div>
+          <div class="footer-item"><a href="#">Сведения о школе</a></div>
+          <div class="footer-item"><a href="#">Традиции</a></div>
+          <div class="footer-item"><a href="#">Наша команда</a></div>
+          <div class="footer-item"><a href="#">контакты</a></div>
+          <div class="footer-item"><a href="#">достижения</a></div>
+          <div class="footer-item"><a href="#">вопрос ответ</a></div>
+          <div class="footer-item"><a href="#">история</a></div>
+          <div class="footer-item"><a href="#">классы</a></div>
+        </div>
+
+        <div class="items">
+          <div class="footer-header"><a href="#">Медиа</a></div>
+          <div class="footer-item"><a href="#">Фото</a></div>
+          <div class="footer-item"><a href="#">Видео</a></div>
+          <div class="footer-item"><a href="#">Традиции</a></div>
+        </div>
+
+        <div class="items">
+          <div class="footer-header"><a href="#">Ученикам</a></div>
+          <div class="footer-item"><a href="#">подготовка к ГИА</a></div>
+          <div class="footer-item"><a href="#">актировка</a></div>
+          <div class="footer-item"><a href="#">профориентация</a></div>
+          <div class="footer-item"><a href="#">расписания</a></div>
+          <div class="footer-item"><a href="#">Библиотека</a></div>
+          <div class="footer-item"><a href="#">музей</a></div>
+        </div>
+
+        <div class="items">
+          <div class="footer-header"><a href="#">расписание</a></div>
+          <div class="footer-item"><a href="#">уроков (1 классы)</a></div>
+          <div class="footer-item"><a href="#">уроков (2 - 4 классы)</a></div>
+          <div class="footer-item"><a href="#">уроков (5 - 11 классы)</a></div>
+          <div class="footer-item"><a href="#">звонков</a></div>
+          <div class="footer-item"><a href="#">кружков и секций</a></div>
+        </div>
+
+        <div class="items-info">
+          <div class="footer-header">
+            <a href="#">контакты</a>
+          </div>
+          <div class="footer-item">
+            <span class="block"><i class="fas fa-phone"></i>(34643) 3-13-96</span>
+          </div>
+
+          <div class="footer-item">
+            <span class="block"><i class="fas fa-envelope"></i>school1megion@mail.ru</span>
+          </div>
+
+          <div class="footer-item">
+            <span class="block"><i class="fas fa-map-marker-alt"></i>628685, г.Мегион, ул. Свободы 6</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bottom-line">
+        <div class="bottom-line-box">
+          2018 &copy; МБОУ СОШ №1, Мегион
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
